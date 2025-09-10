@@ -1,0 +1,18 @@
+- company: AI-Powered Growth Agency
+  role: AI Engineer
+  date: 2024 — Present
+  summary: Built LLM apps, evaluation harnesses, and agentic workflows for growth.
+  logo: /images/work/agency.png
+  url: /work/
+- company: Defense & Manufacturing
+  role: Computer Vision / ML
+  date: 2022 — 2024
+  summary: Deployed visual QA and anomaly detection with human-in-the-loop.
+  logo: /images/work/defense.png
+  url: /work/
+- company: Sample Co.
+  role: AI Consultant (Contract)
+  date: 2025
+  summary: Delivered a roadmap and prototype for an LLM-based customer support assistant with RAG and evaluation.
+  logo: /images/work/sample.png
+  url: /work/
