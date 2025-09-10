@@ -1,4 +1,4 @@
-baseURL = 'https://orhunkose.github.io/'
+baseURL = 'https://Cengineer00.github.io/'
 languageCode = 'en'
 title = 'Orhun Köse — AI Consultant'
 theme = 'PaperMod'
@@ -23,7 +23,6 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   comments = false
   images = [ 'images/cover.jpg' ]
 
-  profileMode = true
   [params.profileMode]
     enabled = true
     title = 'AI Consultant'
