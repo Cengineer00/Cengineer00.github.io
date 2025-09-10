@@ -14,3 +14,7 @@ title: "Home"
 - AI Engineer at an AI-Powered Growth Agency
 
 Explore my projects and posts, or get in touch to collaborate.
+
+{{< work_timeline >}}
+
+{{< projects_gallery >}}

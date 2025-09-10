@@ -1,0 +1,24 @@
+- name: LLM Evaluation Framework
+  tag: Tooling
+  image: /images/projects/eval.jpg
+  url: /projects/
+- name: Agentic Lead Enrichment
+  tag: Agents
+  image: /images/projects/agent.jpg
+  url: /projects/
+- name: RAG for Internal Docs
+  tag: RAG
+  image: /images/projects/rag.jpg
+  url: /projects/
+- name: Vision QA for Manufacturing
+  tag: CV
+  image: /images/projects/vision.jpg
+  url: /projects/
+- name: Contract QA Assistant
+  tag: LLM App
+  image: /images/projects/contract.jpg
+  url: /projects/
+- name: Analytics Copilot
+  tag: Copilot
+  image: /images/projects/copilot.jpg
+  url: /projects/

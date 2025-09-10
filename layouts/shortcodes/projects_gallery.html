@@ -1,0 +1,16 @@
+<section class="projects-gallery">
+  <h2>Projects</h2>
+  <p class="projects-sub">Check out some of my personal and client projects</p>
+  <div class="projects-grid">
+    {{ range site.Data.projects.list }}
+    <a class="project-tile" href="{{ .url }}" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
+      <div class="project-thumb" style="background-image:url('{{ .image }}');"></div>
+      <div class="project-meta">
+        <div class="project-name">{{ .name }}</div>
+        {{ if .tag }}<div class="project-tag">{{ .tag }}</div>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  <div class="projects-cta-wrap"><a class="hero-cta" href="/projects/">SEE MORE →</a></div>
+</section> 
