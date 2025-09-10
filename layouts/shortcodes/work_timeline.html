@@ -1,0 +1,20 @@
+<section class="work-timeline">
+  <h2>Work Experience</h2>
+  <div class="work-grid">
+    {{ range site.Data.work.list }}
+    <div class="work-card">
+      <div class="work-logo">
+        {{ if .logo }}<img src="{{ .logo }}" alt="{{ .company }}" />{{ end }}
+      </div>
+      <div class="work-body">
+        <div class="work-head">
+          <div class="work-title">{{ .company }}</div>
+          <div class="work-role">{{ .role }}</div>
+          <div class="work-date">{{ .date }}</div>
+        </div>
+        <div class="work-desc">{{ .summary }}</div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section> 
