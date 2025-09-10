@@ -1,3 +1,81 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://orhunkose.github.io/'
+languageCode = 'en'
+title = 'Orhun Köse — AI Consultant'
+theme = 'PaperMod'
+
+taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
+
+[params]
+  env = 'production'
+  description = 'AI Engineer & Consultant — MSc CS @ University of Freiburg'
+  author = 'Mustafa Orhun Köse'
+  keywords = [ 'AI', 'Consultant', 'ML', 'LLM', 'MLOps', 'Freiburg' ]
+  DateFormat = '2006-01-02'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  images = [ 'images/cover.jpg' ]
+
+  profileMode = true
+  [params.profileMode]
+    enabled = true
+    title = 'AI Consultant'
+    subtitle = 'MSc CS @ University of Freiburg · 3+ yrs industry · AI-Powered Growth Agency — I help teams ship AI products and integrate LLMs effectively.'
+    imageUrl = 'images/avatar.jpg'
+    imageWidth = 180
+    imageHeight = 180
+    imageTitle = 'Orhun Köse'
+    buttons = [
+      { name = 'About', url = '/about/' },
+      { name = 'Projects', url = '/projects/' },
+      { name = 'Posts', url = '/posts/' },
+      { name = 'Contact', url = '/contact/' }
+    ]
+
+  socialIcons = [
+    { name = 'github', url = 'https://github.com/orhunkose' },
+    { name = 'linkedin', url = 'https://www.linkedin.com/in/cengineer13/' },
+    { name = 'email', url = 'mailto:koseorhun13@gmail.com' }
+  ]
+
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 40
+
+[outputs]
+  home = [ 'HTML', 'RSS', 'JSON' ]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[services]
+  [services.googleAnalytics]
+    id = ''  # add GA4 ID if needed
