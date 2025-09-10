@@ -119,3 +119,17 @@ body.dark .header-wrapper, body.dark .header .container {
   object-fit: cover !important;
   box-shadow: 0 4px 18px rgba(0,0,0,0.08) !important;
 } 
+
+/* Hero typography and CTA */
+.hero-hi { text-align: center; font-size: 1.1rem; color: var(--muted); margin: 0.25rem 0 0.5rem; }
+.hero-heading { text-align: center; font-size: clamp(1.8rem, 4.5vw, 3rem); line-height: 1.15; font-weight: 800; margin: 0.25rem auto 0.5rem; max-width: 920px; }
+.hero-subtitle { text-align: center; font-size: 1rem; color: var(--muted); margin: 0.25rem auto 1rem; max-width: 820px; }
+.hero-cta { display: inline-block; margin: 0.5rem auto 1.5rem; padding: 0.8rem 1.25rem; border-radius: 999px; background: #111; color: #fff; text-decoration: none; font-weight: 600; letter-spacing: .3px; box-shadow: 0 6px 22px rgba(0,0,0,0.08); }
+.hero-cta:hover { filter: brightness(0.95); }
+
+/* Center CTA container */
+.hero-cta { display: inline-block; }
+.hero-cta, .hero-subtitle, .hero-heading, .hero-hi { display: block; margin-left: auto; margin-right: auto; }
+
+/* Dark mode adjustments */
+body.dark .hero-cta { background: #e7e7e7; color: #0f1115; } 
