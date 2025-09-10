@@ -1,0 +1,11 @@
+# Hugo
+/public/
+/resources/
+/node_modules/
+.DS_Store
+.hugo_build.lock
+*.log
+
+# Local env
+.env
+.env.*
