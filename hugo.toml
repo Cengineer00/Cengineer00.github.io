@@ -11,8 +11,8 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   author = 'Mustafa Orhun Köse'
   keywords = [ 'AI', 'Consultant', 'ML', 'LLM', 'MLOps', 'Freiburg' ]
   DateFormat = '2006-01-02'
-  defaultTheme = 'light'
-  disableThemeToggle = true
+  defaultTheme = 'auto'
+  disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -22,6 +22,10 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   TocOpen = false
   comments = false
   images = [ 'images/cover.jpg' ]
+
+  [params.label]
+    icon = 'images/logo.png'       # place your photo at static/images/avatar.jpg
+    iconHeight = 28                  # adjust size if needed
 
   [params.profileMode]
     enabled = false

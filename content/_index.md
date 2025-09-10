@@ -2,6 +2,8 @@
 title: "Home"
 ---
 
+<img src="/images/avatar.jpg" alt="Orhun Köse" class="home-hero" />
+
 Welcome — I help teams design, build, and ship AI systems that work in production.
 
 - MSc CS @ University of Freiburg
