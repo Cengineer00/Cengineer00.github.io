@@ -35,7 +35,7 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
     subtitle = 'AI Engineer & Consultant — I help teams ship reliable AI.'
     intro = 'MSc CS @ Freiburg · 3+ yrs industry · Growth Agency'
     links = [
-      { name = 'Email', url = 'mailto:koseorhun13@gmail.com' },
+      { name = 'Email', url = 'koseorhun13@gmail.com' },
       { name = 'GitHub', url = 'https://github.com/Cengineer00' },
       { name = 'LinkedIn', url = 'https://www.linkedin.com/in/cengineer13/' }
     ]
@@ -50,17 +50,17 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   [[menu.main]]
     identifier = 'work'
     name = 'Work Experience'
-    url = '/work/'
+    url = '#work'
     weight = 10
   [[menu.main]]
     identifier = 'projects'
     name = 'Projects'
-    url = '/projects/'
+    url = '#projects'
     weight = 20
   [[menu.main]]
     identifier = 'social'
     name = 'Social'
-    url = '/social/'
+    url = '#social'
     weight = 30
 
 [outputs]
