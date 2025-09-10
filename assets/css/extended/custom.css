@@ -26,8 +26,14 @@ html, body,
 
 /* Keep header/menu minimal and align: title left, menu right */
 .header { position: sticky; top: 0; z-index: 5; }
-.header .nav { display: flex; align-items: center; justify-content: space-between; }
-#menu, .menu { display: flex; align-items: center; gap: 1rem; margin-left: 0; }
+.header .nav { display: flex; align-items: center; min-height: 56px; }
+.header .nav .logo { display: flex; align-items: center; }
+.header .nav .logo a { display: inline-flex; align-items: center; gap: 8px; line-height: 1; }
+#menu { display: flex; align-items: center; gap: 1.25rem; margin: 0; padding: 0; }
+#menu li { display: flex; align-items: center; }
+#menu li a { display: inline-flex; align-items: center; height: 56px; line-height: 1; }
+#menu li a span { display: inline-flex; align-items: center; line-height: 1; }
+.header .logo img[aria-label="logo"] { display: inline-block; width: 28px; height: 28px; border-radius: 999px; object-fit: cover; vertical-align: middle; }
 
 /* Header site title size/weight */
 header.header .nav .logo a { font-size: 0.95rem !important; font-weight: 600 !important; letter-spacing: .1px; }
