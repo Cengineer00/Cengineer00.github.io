@@ -1,6 +1,6 @@
 baseURL = 'https://Cengineer00.github.io/'
 languageCode = 'en'
-title = 'Orhun Köse — AI Consultant'
+title = 'M. Orhun Köse - MSc CS @ University of Freiburg'
 theme = 'PaperMod'
 
 taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
@@ -11,8 +11,8 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   author = 'Mustafa Orhun Köse'
   keywords = [ 'AI', 'Consultant', 'ML', 'LLM', 'MLOps', 'Freiburg' ]
   DateFormat = '2006-01-02'
-  defaultTheme = 'auto'
-  disableThemeToggle = false
+  defaultTheme = 'light'
+  disableThemeToggle = true
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
