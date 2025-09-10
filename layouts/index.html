@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="home-wrap">
+  <div class="intro-fixed">
+    <div class="intro-name">{{ with site.Params.home.title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</div>
+    <div class="intro-sub">{{ site.Params.home.intro }}</div>
+  </div>
+
+  <section class="hero">
+    <h1 class="hero-title">{{ site.Params.home.subtitle }}</h1>
+    <div class="hero-links">
+      {{ range site.Params.home.links }}
+        <a href="{{ .url }}" class="hero-link" target="_blank" rel="noopener">{{ .name }}</a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="sections">
+    <div class="section-item">
+      <a href="/work/">Work Experience →</a>
+    </div>
+    <div class="section-item">
+      <a href="/projects/">Projects →</a>
+    </div>
+    <div class="section-item">
+      <a href="/social/">Social →</a>
+    </div>
+  </section>
+</main>
+{{ end }} 

@@ -1,0 +1,52 @@
+:root {
+  --bg: #faf7f2;
+  --text: #1c1c1c;
+  --muted: #6b6b6b;
+  --link: #0b5fff;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.home-wrap {
+  padding: 6rem 1.25rem 3rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.intro-fixed {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.intro-name { font-weight: 700; }
+.intro-sub { color: var(--muted); }
+
+.hero { margin-top: 2rem; }
+.hero-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+.hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.hero-link { color: var(--link); text-decoration: none; }
+.hero-link:hover { text-decoration: underline; }
+
+.sections { margin-top: 2rem; display: grid; gap: 0.5rem; }
+.section-item a { text-decoration: none; }
+.section-item a:hover { text-decoration: underline; }
+
+/* Keep header/menu minimal */
+.header, .nav {
+  background: transparent !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .intro-fixed { position: static; margin-bottom: 1rem; }
+  .home-wrap { padding-top: 2rem; }
+} 

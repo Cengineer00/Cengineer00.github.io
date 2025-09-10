@@ -24,31 +24,29 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
   images = [ 'images/cover.jpg' ]
 
   [params.profileMode]
-    enabled = true
-    title = 'AI Consultant'
-    subtitle = 'MSc CS @ University of Freiburg · 3+ yrs industry · AI-Powered Growth Agency — I help teams ship AI products and integrate LLMs effectively.'
-    imageUrl = 'images/avatar.jpg'
-    imageWidth = 180
-    imageHeight = 180
-    imageTitle = 'Orhun Köse'
-    buttons = [
-      { name = 'About', url = '/about/' },
-      { name = 'Projects', url = '/projects/' },
-      { name = 'Posts', url = '/posts/' },
-      { name = 'Contact', url = '/contact/' }
+    enabled = false
+
+  [params.home]
+    title = 'Orhun Köse'
+    subtitle = 'AI Engineer & Consultant — I help teams ship reliable AI.'
+    intro = 'MSc CS @ Freiburg · 3+ yrs industry · Growth Agency'
+    links = [
+      { name = 'Email', url = 'mailto:koseorhun13@gmail.com' },
+      { name = 'GitHub', url = 'https://github.com/Cengineer00' },
+      { name = 'LinkedIn', url = 'https://www.linkedin.com/in/cengineer13/' }
     ]
 
   socialIcons = [
-    { name = 'github', url = 'https://github.com/orhunkose' },
+    { name = 'github', url = 'https://github.com/Cengineer00' },
     { name = 'linkedin', url = 'https://www.linkedin.com/in/cengineer13/' },
     { name = 'email', url = 'mailto:koseorhun13@gmail.com' }
   ]
 
 [menu]
   [[menu.main]]
-    identifier = 'about'
-    name = 'About'
-    url = '/about/'
+    identifier = 'work'
+    name = 'Work Experience'
+    url = '/work/'
     weight = 10
   [[menu.main]]
     identifier = 'projects'
@@ -56,15 +54,10 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
     url = '/projects/'
     weight = 20
   [[menu.main]]
-    identifier = 'posts'
-    name = 'Posts'
-    url = '/posts/'
+    identifier = 'social'
+    name = 'Social'
+    url = '/social/'
     weight = 30
-  [[menu.main]]
-    identifier = 'contact'
-    name = 'Contact'
-    url = '/contact/'
-    weight = 40
 
 [outputs]
   home = [ 'HTML', 'RSS', 'JSON' ]
@@ -77,4 +70,4 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
 
 [services]
   [services.googleAnalytics]
-    id = ''  # add GA4 ID if needed
+    id = ''
