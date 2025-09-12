@@ -164,7 +164,7 @@ body.dark .hero-cta { background: #e7e7e7; color: #0f1115; }
 .work-timeline h2 { font-size: 1.25rem; margin: 0 0 0.75rem; }
 .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
 .work-card { display: grid; grid-template-columns: 56px 1fr; gap: 0.75rem; background: var(--entry); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem; }
-.work-logo img { width: 56px; height: 56px; border-radius: 12px; object-fit: contain; background: #fff; }
+.work-logo img { width: 56px; height: 56px; object-fit: contain; background: #fff; }
 .work-title { font-weight: 700; }
 .work-role { color: var(--muted); }
 .work-date { color: var(--muted); font-size: 0.9rem; margin-top: 0.1rem; }
@@ -189,4 +189,52 @@ body.dark .hero-cta { background: #e7e7e7; color: #0f1115; }
 .section-padding {
   padding-top: .3rem;
   padding-bottom: .15rem;
+}
+
+/* ===== Mobile Header Fix (menu alt satırda ortalanmış, toggle sağda) ===== */
+@media (max-width: 720px) {
+  /* Header nav flex */
+  .header .nav {
+    display: flex;
+    flex-wrap: wrap; /* alt satıra geçebilir */
+    align-items: center;
+    justify-content: space-between; /* logo solda, toggle sağda */
+    padding: 0.5rem var(--content-pad-mobile);
+  }
+
+  /* Logo */
+  .header .logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem !important;
+  }
+  .header .logo img[aria-label="logo"] {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Theme toggle butonu üst satırda sağda */
+  .header .theme-toggle {
+    order: 0;
+    margin-left: auto;
+  }
+
+  /* Menü alt satırda, ortalanmış */
+  #menu {
+    flex-basis: 100%; /* alt satır */
+    display: flex;
+    justify-content: center; /* ortala */
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem; /* üst satır ile boşluk */
+  }
+
+  #menu li a {
+    height: auto;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
 }
