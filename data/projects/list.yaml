@@ -1,24 +1,16 @@
-- name: LLM Evaluation Framework
-  tag: Tooling
-  image: /images/projects/eval.jpg
-  url: /projects/
-- name: Agentic Lead Enrichment
-  tag: Agents
-  image: /images/projects/agent.jpg
-  url: /projects/
-- name: RAG for Internal Docs
-  tag: RAG
-  image: /images/projects/rag.jpg
-  url: /projects/
-- name: Vision QA for Manufacturing
-  tag: CV
-  image: /images/projects/vision.jpg
-  url: /projects/
-- name: Contract QA Assistant
-  tag: LLM App
-  image: /images/projects/contract.jpg
-  url: /projects/
-- name: Analytics Copilot
-  tag: Copilot
-  image: /images/projects/copilot.jpg
-  url: /projects/
+- name: ASTARTE
+  tag: Mobile App, Smart Agriculture
+  image: /images/projects/astarte.png
+  url: https://senior.ceng.metu.edu.tr/2023/astarte/
+- name: Modeling of Electric Vehicle Battery Use
+  tag: Predictive Modeling
+  image: /images/projects/cps.png
+  url: https://cps.ceng.metu.edu.tr/projects/estimation-for-ev/
+- name: League of Legends Last Hit AI
+  tag: Deep Learning, Object Detection, Transfer Learning
+  image: /images/projects/lol.png
+  url: https://www.youtube.com/watch?v=tHWoz6xyk7k&t=3s
+- name: YouTube Thumbnail Scorer
+  tag: Computer Vision, Performance Prediction, YouTube Analytics, Streamlit App
+  image: /images/projects/thumbnail_scorer.png
+  url: https://github.com/Cengineer00/thumbnail-scorer
