@@ -16,3 +16,7 @@ title: "Home"
 <div class="section-padding" id="projects">
   {{< projects_gallery >}}
 </div>
+
+<div class="section-padding" id="socials">
+  {{< socials_gallery >}}
+</div>
