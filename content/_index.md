@@ -6,7 +6,7 @@ title: "Home"
 
 <p class="hero-hi">Hi, I'm Orhun</p>
 <h1 class="hero-heading">Building reliable AI products, workflows, and experiences.</h1>
-<p class="hero-subtitle">AI Engineer & Consultant focused on LLM apps, evaluation, RAG, and pragmatic MLOps. I help teams design, build, and ship AI systems that work in production.</p>
+<p class="hero-subtitle">AI Engineer & Consultant. I help teams design and deploy practical AI solutions, specializing in computer vision, deep learning, and autonomous systems.</p>
 <p><a class="hero-cta" href="mailto:koseorhun13@gmail.com">CONNECT WITH ME</a></p>
 
 <div class="section-padding" id="work">
