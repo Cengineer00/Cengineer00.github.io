@@ -1,0 +1,10 @@
+  - title: "My First YouTube Video"
+    url: "https://youtube.com/..."
+    image: "/images/youtube1.jpg"
+    platform: "youtube"
+    external: true
+  - title: "Instagram Post 1"
+    url: "https://instagram.com/..."
+    image: "/images/insta1.jpg"
+    platform: "instagram"
+    external: true
