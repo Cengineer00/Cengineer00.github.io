@@ -58,9 +58,9 @@ taxonomies = { category = 'categories', tag = 'tags', series = 'series' }
     url = '#projects'
     weight = 20
   [[menu.main]]
-    identifier = 'social'
-    name = 'Social'
-    url = '#social'
+    identifier = 'socials'
+    name = 'Socials'
+    url = '#socials'
     weight = 30
 
 [outputs]

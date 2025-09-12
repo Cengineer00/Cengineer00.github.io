@@ -1,10 +1,30 @@
-  - title: "My First YouTube Video"
-    url: "https://youtube.com/..."
-    image: "/images/youtube1.jpg"
-    platform: "youtube"
+  - title: "How Would I Learn Artificial Intelligence If I Were Starting Over?"
+    url: "https://youtu.be/GFk-NtJ29kk"
+    image: "/images/socials/ai_roadmap.jpg"
+    platform: "YouTube"
     external: true
-  - title: "Instagram Post 1"
-    url: "https://instagram.com/..."
-    image: "/images/insta1.jpg"
-    platform: "instagram"
+  - title: "Groundbreaking Article in Artificial Intelligence: Attention Is All You Need"
+    url: "https://youtu.be/4IfE22801Us"
+    image: "/images/socials/attention.jpeg"
+    platform: "YouTube"
+    external: true
+  - title: 'What is "Reinforcement Learning with Human Feedback"?'
+    url: "https://youtu.be/mMQjFQzj9Dw"
+    image: "/images/socials/rlhf.jpeg"
+    platform: "YouTube"
+    external: true
+  - title: "From the Industry: What Does a Computer Vision Engineer Do?"
+    url: "https://youtu.be/ud7OLZTbV1w"
+    image: "/images/socials/cvision.jpeg"
+    platform: "YouTube"
+    external: true
+  - title: "What is Explainable AI?"
+    url: "https://www.instagram.com/reel/DGvoZBKNQp3/?utm_source=ig_web_copy_link&igsh=cmg3anp6ajFnMDRy"
+    image: "/images/socials/xai.png"
+    platform: "Instagram"
+    external: true
+  - title: "Scalability in Computer Vision Models"
+    url: "https://www.instagram.com/reel/DEkc79isoqB/?utm_source=ig_web_copy_link&igsh=MWZvZWlqZDkxMDdmdg=="
+    image: "/images/socials/yumruk.png"
+    platform: "Instagram"
     external: true

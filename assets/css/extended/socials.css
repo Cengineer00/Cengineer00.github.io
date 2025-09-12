@@ -1,46 +1,94 @@
-.social-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem; /* Butonlar ile arada boşluk */
+/* Social slider base */
+.social-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.social-slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.4s ease;
 }
 
 .social-tile {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+  flex: 0 0 280px; /* biraz daha büyük */
+  scroll-snap-align: start;
+  cursor: pointer;
 }
 
 .social-thumb {
   width: 100%;
-  height: 150px;
+  aspect-ratio: 16/9;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
 
-.social-meta {
-  margin-top: 0.5rem;
-  text-align: center;
+.social-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
 }
 
+
+.social-meta {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.social-platform {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Slider buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.slider-btn.prev { left: 0.5rem; }
+.slider-btn.next { right: 0.5rem; }
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Social site buttons */
 .social-buttons {
   display: flex;
-  gap: 1rem;
-  justify-content: center; /* Ortala */
+  gap: 5rem;
+  justify-content: center;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .social-btn {
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   transition: transform 0.2s, box-shadow 0.3s;
   color: #fff;
 }
@@ -66,4 +114,13 @@
 .social-btn.instagram:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(214, 36, 159, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .social-tile { flex: 0 0 280px; }
+}
+
+@media (max-width: 640px) {
+  .social-tile { flex: 0 0 240px; }
 }

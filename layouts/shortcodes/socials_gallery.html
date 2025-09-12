@@ -1,25 +1,65 @@
 <section class="social-gallery">
   <h1>Social Media</h1>
-  <p class="social-sub">Check out some of my YouTube and Instagram content</p>
+  <p class="social-sub">
+    Co-host of <strong>Noktali Virgül</strong>, a channel guiding students and new grads in computer science (10k+ followers accross platforms). 
+    On <strong>Instagram</strong>, I make AI fun and approachable, sharing weekly educational posts for 15k+ followers.
+  </br>Take a peek at some pieces of my content!
+  </p>
 
-  <div class="social-grid">
-    {{ range site.Data.socials.list }}
-    <a class="social-tile {{ .platform }}" href="{{ .url }}" {{ if .external }}target="_blank" rel="noopener"{{ end }}>
-      <div class="social-thumb" style="background-image:url('{{ .image }}');"></div>
-      <div class="social-meta">
-        <div class="social-title">{{ .title }}</div>
-        {{ if .platform }}<div class="social-platform">{{ .platform | title }}</div>{{ end }}
-      </div>
-    </a>
-    {{ end }}
+  <div class="social-slider-wrapper">
+    <button class="slider-btn prev">&#8249;</button>
+    <div class="social-slider">
+      {{ range site.Data.socials.list }}
+      <a class="social-tile {{ .platform }}" href="{{ .url }}" {{ if .external }} target="_blank" rel="noopener" {{ end }}>
+        <div class="social-thumb" style="background-image:url('{{ .image }}');"></div>
+        <div class="social-meta">
+          <div class="social-title">{{ .title }}</div>
+          {{ if .platform }}<div class="social-platform">{{ .platform | title }}</div>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    <button class="slider-btn next">&#8250;</button>
   </div>
 
   <div class="social-buttons">
-    <a class="social-btn youtube" href="https://youtube.com/yourchannel" target="_blank" rel="noopener">
+    <a class="social-btn youtube" href="https://www.youtube.com/@noktali.virgul.podcast" target="_blank" rel="noopener">
       <img src="images/icons/youtube.svg" alt="YouTube Logo" class="social-logo"> YouTube
     </a>
-    <a class="social-btn instagram" href="https://instagram.com/yourprofile" target="_blank" rel="noopener">
+    <a class="social-btn instagram" href="https://www.instagram.com/orhun_kose/" target="_blank" rel="noopener">
       <img src="images/icons/instagram.svg" alt="Instagram Logo" class="social-logo"> Instagram
     </a>
   </div>
 </section>
+
+
+<script>
+const slider = document.querySelector('.social-slider');
+const nextBtn = document.querySelector('.slider-btn.next');
+const prevBtn = document.querySelector('.slider-btn.prev');
+const tileWidth = slider.querySelector('.social-tile').offsetWidth + 16; // gap = 16px
+
+function slideNext() {
+  slider.style.transition = 'transform 0.4s ease';
+  slider.style.transform = `translateX(-${tileWidth}px)`;
+  slider.addEventListener('transitionend', () => {
+    slider.style.transition = 'none';
+    slider.appendChild(slider.firstElementChild);
+    slider.style.transform = 'translateX(0)';
+  }, { once: true });
+}
+
+function slidePrev() {
+  slider.style.transition = 'none';
+  slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
+  slider.style.transform = `translateX(-${tileWidth}px)`;
+  requestAnimationFrame(() => {
+    slider.style.transition = 'transform 0.4s ease';
+    slider.style.transform = 'translateX(0)';
+  });
+}
+
+nextBtn.addEventListener('click', slideNext);
+prevBtn.addEventListener('click', slidePrev);
+
+</script>
