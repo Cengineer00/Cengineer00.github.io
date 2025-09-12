@@ -4,7 +4,11 @@
     {{ range site.Data.work.list }}
     <div class="work-card">
       <div class="work-logo">
-        {{ if .logo }}<img src="{{ .logo }}" alt="{{ .company }}" />{{ end }}
+        {{ if .logo }}
+        <a href="{{ .url }}" target="_blank" rel="noopener">
+          <img src="{{ .logo }}" alt="{{ .company }}" />
+        </a>
+        {{ end }}
       </div>
       <div class="work-body">
         <div class="work-head">
@@ -17,4 +21,9 @@
     </div>
     {{ end }}
   </div>
-</section> 
+
+  <!-- CV Button -->
+  <div class="work-cta-wrap">
+    <a class="hero-cta" href="/files/CV.pdf" target="_blank" rel="noopener">View My CV →</a>
+  </div>
+</section>
