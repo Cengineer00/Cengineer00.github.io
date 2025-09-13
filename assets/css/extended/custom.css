@@ -37,7 +37,7 @@ html, body,
 .header .logo img[aria-label="logo"] { display: inline-block; width: 28px; height: 28px; border-radius: 999px; object-fit: cover; vertical-align: middle; }
 
 /* Header site title size/weight */
-header.header .nav .logo a { font-size: 0.95rem !important; font-weight: 600 !important; letter-spacing: .1px; }
+header.header .nav .logo a { font-size: 0.95rem !important; font-weight: 600 !important; letter-spacing: .1px; transition: transform 0.3s ease; }
 
 /* Header avatar styling */
 .header .logo img[aria-label="logo"] {
@@ -145,12 +145,28 @@ body.dark .header-wrapper, body.dark .header .container {
   font-weight: 600;
   letter-spacing: 0.3px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
-  margin: 2.25rem auto 1rem auto !important;
+  margin: 2.25rem auto -3rem auto !important;
   width: fit-content;
   text-align: center;
 }
 
-.hero-cta:hover { filter: brightness(0.95); }
+.connect-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.connect-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.connect-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
 
 /* Center CTA container */
 .hero-cta { display: inline-block; }
